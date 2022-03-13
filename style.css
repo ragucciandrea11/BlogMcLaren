@@ -1,0 +1,84 @@
+body{
+	background-color: #000066;
+}
+a{
+	text-decoration: none;
+}
+header{
+	margin: 0;
+	background-image: url('mc.jpg');
+	background-repeat: no-repeat;
+	padding: 10px;
+	height: 300px;
+}
+#header-home{
+	margin: 0;
+	color: white;
+	float: left;
+	width: 20%;
+	font-size: 30px;
+}
+#nav{
+	color: white;
+	list-style-type: none;
+	float: right;
+	width: 30%;
+}
+#nav li{
+	display: inline-block;
+	padding: 0 8px;
+	font-size: 20px;
+}
+#nav li a{
+	font-size: 30px;
+	color: white;
+}
+#nav li a:hover{
+	text-decoration: underline;
+}
+#div1{
+	width: 45%; 
+	float: left;
+}
+#div2{
+	width: 45%; 
+	float: right;
+}
+@media (max-width: 1212px) {
+	#header-home{
+		color: black;
+		float: none;
+	}
+	#nav{
+		list-style-type: none;
+		float: none;
+		width: 200px;
+		background-color: #ff6600;
+	}
+	#nav li{
+		display: block;
+		padding: 10px 0;
+	}
+	#nav li a{
+		color: black;
+		font-family: Lucida Handwriting;
+	}
+}
+@media (max-width: 878px) {
+	header{
+		background-image: url('mc2.jpg');
+	}
+	#div1{
+		float: none;
+		width: 95%;
+	}
+	#div2{
+		float: none;
+		width: 95%;
+	}
+}
+@media (max-width: 520px) {
+	header{
+		background-image: url('mc3.jpg');
+	}
+}
